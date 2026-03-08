@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skincare Guide</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fde2e4;
+            margin: 0;
+        }
+
+        header {
+            background: #f8cdda;
+            text-align: center;
+            padding: 18px;
+        }
+
+        .tabs {
+            text-align: center;
+            background: #fff;
+            padding: 10px;
+        }
+
+        .tabs button {
+            padding: 8px 14px;
+            margin: 5px;
+            border: none;
+            border-radius: 15px;
+            background: #b56576;
+            color: white;
+            cursor: pointer;
+        }
+
+        .tabs button.active {
+            background: #9c4f65;
+        }
+
+        .content {
+            display: none;
+            margin: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        h2 {
+            color: #b56576;
+        }
+
+        ul li {
+            margin: 6px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1> Skincare Guide</h1>
+    <p>Easy, Simple & Healthy Skin Care</p>
+</header>
+
+<!-- TABS -->
+<div class="tabs">
+    <button class="active" onclick="openTab('home', this)">Home</button>
+    <button onclick="openTab('routine', this)">Routine</button>
+    <button onclick="openTab('types', this)">Skin Types</button>
+    <button onclick="openTab('buy', this)">Buy Products</button>
+    <button onclick="openTab('food', this)">Food for Skin</button>
+    <button onclick="openTab('homecare', this)">Home Care</button>
+</div>
+
+<!-- HOME -->
+<div id="home" class="content active">
+    <h2>Welcome to Skincare Guide</h2>
+    <p>This website helps you understand basic skincare in a simple way.</p>
+
+    <h3> Contact Dermatologist</h3>
+    <p>
+        <b>Dr. Priya Bhosale</b><br>
+        Phone: <b>7559421964</b>
+    </p>
+
+    <h3>Why Skincare is Important?</h3>
+    <ul>
+        <li>Keeps skin healthy and glowing</li>
+        <li>Prevents acne and dryness</li>
+        <li>Protects from sun damage</li>
+    </ul>
+</div>
+
+<!-- ROUTINE -->
+<div id="routine" class="content">
+    <h2>Daily Skincare Routine</h2>
+    <ul>
+        <li><b>Cleanser:</b> Removes dirt and oil</li>
+        <li><b>Moisturizer:</b> Keeps skin hydrated</li>
+        <li><b>Sunscreen:</b> Protects from sun</li>
+    </ul>
+
+    <h3>Morning Routine</h3>
+    <p>Cleanser → Moisturizer → Sunscreen</p>
+
+    <h3>Night Routine</h3>
+    <p>Cleanser → Moisturizer</p>
+</div>
+
+<!-- SKIN TYPES -->
+<div id="types" class="content">
+    <h2>Skin Types</h2>
+    <ul>
+        <li><b>Dry Skin:</b> Tight and flaky</li>
+        <li><b>Oily Skin:</b> Shiny and greasy</li>
+        <li><b>Combination Skin:</b> Oily nose, dry cheeks</li>
+        <li><b>Sensitive Skin:</b> Red and itchy</li>
+    </ul>
+
+    <h3>Routine Based on Skin Type</h3>
+    <ul>
+        <li><b>Dry:</b> Cream cleanser + Rich moisturizer</li>
+        <li><b>Oily:</b> Gel cleanser + Light moisturizer</li>
+        <li><b>Sensitive:</b> Gentle products only</li>
+    </ul>
+</div>
+
+<!-- BUY PRODUCTS -->
+<div id="buy" class="content">
+    <h2>Where to Purchase Skincare Products?</h2>
+    <ul>
+        <li>Medical stores / pharmacies</li>
+        <li>Dermatologist clinics</li>
+        <li>Trusted cosmetic shops</li>
+        <li>Online platforms (verified sellers only)</li>
+    </ul>
+
+    <h3>Important Tips</h3>
+    <ul>
+        <li>Always check expiry date</li>
+        <li>Do patch test before use</li>
+        <li>Consult dermatologist for skin problems</li>
+    </ul>
+</div>
+
+<!-- FOOD FOR SKIN -->
+<div id="food" class="content">
+    <h2>Food to Eat for Healthy Skin </h2>
+
+    <ul>
+        <li><b>Fruits:</b> Orange, papaya, apple, watermelon</li>
+        <li><b>Vegetables:</b> Carrot, spinach, tomato, cucumber</li>
+        <li><b>Nuts & Seeds:</b> Almonds, walnuts, flax seeds</li>
+        <li><b>Dairy:</b> Curd, buttermilk</li>
+        <li><b>Proteins:</b> Eggs, pulses, beans</li>
+    </ul>
+
+    <h3> Hydration</h3>
+    <p>Drink at least <b>8–10 glasses of water</b> daily.</p>
+
+    <h3> Avoid</h3>
+    <ul>
+        <li>Junk food</li>
+        <li>Too much sugar</li>
+        <li>Oily & fried food</li>
+    </ul>
+</div>
+
+<!-- HOME SKIN CARE -->
+<div id="homecare" class="content">
+    <h2>Home Skincare Remedies </h2>
+
+    <h3> For Glowing Skin</h3>
+    <ul>
+        <li><b>Honey:</b> Apply for 10 minutes, then wash</li>
+        <li><b>Milk:</b> Clean face with cotton</li>
+    </ul>
+
+    <h3> For Oily Skin</h3>
+    <ul>
+        <li><b>Multani Mitti:</b> Use once a week</li>
+        <li><b>Rose Water:</b> Use as toner</li>
+    </ul>
+
+    <h3> For Dry Skin</h3>
+    <ul>
+        <li><b>Aloe Vera Gel:</b> Apply daily</li>
+        <li><b>Coconut Oil:</b> Apply at night</li>
+    </ul>
+
+    <h3> Important</h3>
+    <ul>
+        <li>Do patch test before use</li>
+        <li>Use home remedies 1–2 times a week</li>
+        <li>Stop if irritation occurs</li>
+    </ul>
+</div>
+
+<script>
+    function openTab(id, btn) {
+        let contents = document.querySelectorAll(".content");
+        let buttons = document.querySelectorAll(".tabs button");
+
+        contents.forEach(c => c.classList.remove("active"));
+        buttons.forEach(b => b.classList.remove("active"));
+
+        document.getElementById(id).classList.add("active");
+        btn.classList.add("active");
+    }
+</script>
+
+</body>
+</html>
